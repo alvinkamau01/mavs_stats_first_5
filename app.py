@@ -37,8 +37,7 @@ def compare_players(position):
 
     if not comparison:
         return "No players found for this position."
-
-    # Determine which player is better
+    # Determine which player is better by comparing shooting percentages
     if mavs_player and celtics_player:
         better_team = 'Mavericks' if mavs_player.shots_percentage > celtics_player.shots_percentage else 'Celtics'
         comparison['Better Player'] = better_team
